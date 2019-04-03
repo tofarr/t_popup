@@ -4,7 +4,7 @@ import onAnimEnd from '/src/js/on_anim_end.js';
 const defaults = {
   parent : null,
   className: 't-popup',
-  transitionClass: 'fade',
+  classes: ['fade'],
   containerClassName: 't-popup-container',
   content: 'Override Content with DOM Element or String!',
   isOpen: true,
@@ -16,9 +16,9 @@ function TPopup(attrs){
   const state = Object.assign({}, defaults, attrs);
   const element = document.createElement('div');
   element.classList.add(state.className);
-  if(state.transitionClass){
-    element.classList.add(state.transitionClass);
-  }
+  state.classes.forEach((className) => {
+    element.classList.add(className);
+  });
   const container = document.createElement('div');
   container.className = state.containerClassName;
   element.appendChild(container);
