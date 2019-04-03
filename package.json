@@ -1,0 +1,25 @@
+{
+  "name": "t_popup",
+  "version": "1.0.0",
+  "description": "https://github.com/tofarr/t_popup.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server"
+    "build": "node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tofarr/t_popup.git"
+  },
+  "keywords": [
+    "Popup",
+    "Panels"
+  ],
+  "author": "Tim O'Farrell",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/tofarr/t_popup/issues"
+  },
+  "homepage": "https://github.com/tofarr/t_popup#readme"
+}
