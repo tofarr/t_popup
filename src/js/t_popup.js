@@ -1,5 +1,5 @@
 "use strict";
-import onAnimEnd from '/src/js/on_anim_end.js';
+import onAnimEnd from './on_anim_end.js';
 
 const defaults = {
   parent : null,
